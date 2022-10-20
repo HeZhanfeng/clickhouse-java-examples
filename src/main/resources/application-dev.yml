@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    username:
+    password:
+    driver-class-name: com.clickhouse.jdbc.ClickHouseDriver
+    url: jdbc:clickhouse://192.168.73.200:8123/mgbench
+# p6spy sql打印
+decorator:
+  datasource:
+    enabled: true # 是否启用
+
+## Knife4j配置
+knife4j:
+  production: false
+  basic:
+    # 开启Swagger的Basic认证功能,默认是false
+    enable: true
+    # Basic认证用户名
+    username: admin
+    # Basic认证密码
+    password: admin
